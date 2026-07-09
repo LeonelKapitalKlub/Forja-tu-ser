@@ -245,7 +245,7 @@ INSTRUCCIONES:
 5. Cerrá con UNA pregunta de reflexión poderosa.
 Sé directo, sin rodeos, inspirador y práctico. Respondé en español rioplatense, de manera personal. Máximo 200 palabras.`;
 
-    const resp = await fetch("https://api.anthropic.com/v1/messages", {
+    const resp = await fetch("/api/coach", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
